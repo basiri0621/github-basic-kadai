@@ -1,0 +1,28 @@
+PS C:\Users\basir> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\basir
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2026/01/09     17:13                git_challenge
+
+
+PS C:\Users\basir> cd git_challenge
+PS C:\Users\basir\git_challenge> git init
+Initialized empty Git repository in C:/Users/basir/git_challenge/.git/
+PS C:\Users\basir\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\basir\git_challenge> git add hello_world.txt
+PS C:\Users\basir\git_challenge> git commit -m "hello_world.txtを追加"   
+[main (root-commit) 13dd5e4] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\basir\git_challenge> echo "こんにちは、世界!" >> hello_world.txt
+PS C:\Users\basir\git_challenge> git add hello_world.txt
+PS C:\Users\basir\git_challenge> git commit -m "日本語訳を追加"   
+[main 760f4b5] 日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\basir\git_challenge> git log --oneline
+760f4b5 (HEAD -> main) 日本語訳を追加
+13dd5e4 hello_world.txtを追加
